@@ -24,7 +24,7 @@
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1.6;
- background-color: #d5fdd7; /*???? */
+ background-color: #fafdd5; /*???? */
 }
 #nav {
   padding: 30px;
