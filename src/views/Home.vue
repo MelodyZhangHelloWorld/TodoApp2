@@ -2,6 +2,8 @@
   <div id="home">
  
    <div class="container">
+
+     <AddTodo />
        <todoList  />
 
 
@@ -15,11 +17,13 @@
 <script>
 // @ is an alias to /src
 import todoList from "@/components/todoList.vue";
+import AddTodo from "@/components/AddTodo.vue"
 
 export default {
   name: "Home",
   components: {
-    todoList
+    todoList,
+    AddTodo
   }
 };
 </script>
