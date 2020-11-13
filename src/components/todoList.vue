@@ -15,13 +15,20 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
     name: "todoList",
 
-    computed: mapGetters(['allTodos']) //** why []??
+    methods:{
+      ...mapActions(['fetchTodos']), //called in created()
 
+    },
+
+    computed: mapGetters(['allTodos']), //** why []??
+    created(){
+      this.fetchTodos(); //calls the action 
+    }
 }
 </script>
 
