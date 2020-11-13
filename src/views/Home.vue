@@ -1,18 +1,38 @@
 <template>
-  <div class="home">
+  <div id="home">
  
-    <HelloWorld  />
+   <div class="container">
+       <todoList  />
+
+
+
+
+   </div>
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import todoList from "@/components/todoList.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    todoList
   }
 };
 </script>
+
+
+<style scoped>
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+
+</style>
