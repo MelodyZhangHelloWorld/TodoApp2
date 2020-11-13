@@ -19,10 +19,10 @@ const actions = {
 
         const res = await axios.get('https://jsonplaceholder.typicode.com/todos');
 
-        commit('setTodos', res.data); //wait for await to complete
+        commit('setTodos', res.data); // will wait for await to complete, altly other method instead of await...* 
     },
 
-    async addTodo ( { commit }, title) { //{ commit },
+    async addTodo ( { commit }, title) { //{ commit } *{}* "extracts" the 'commit' from the big object -- JS
 
         const res = await axios.post('https://jsonplaceholder.typicode.com/todos', {title, completed: false});
 
