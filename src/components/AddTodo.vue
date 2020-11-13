@@ -1,9 +1,9 @@
 <template>
   <div>
 
-<div class="add m-3">
+<div class="add m-2">
     <b-col cols-12 >
-<form @submit="submitForm" >
+<form @submit="submitForm($event)" >
         <input type="text" 
         v-model="title" placeholder="Add Todo.. "> <!-- v-model -->
         <input  type="submit" value="Add">

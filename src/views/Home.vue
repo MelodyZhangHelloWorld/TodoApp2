@@ -1,10 +1,12 @@
 <template>
-  <div id="home">
+  <div id="home" class="m-4">
  
    <div class="container">
 
      <AddTodo />
-       <todoList  />
+     <FilterTodos />
+
+    <todoList  />
 
 
 
@@ -18,12 +20,14 @@
 // @ is an alias to /src
 import todoList from "@/components/todoList.vue";
 import AddTodo from "@/components/AddTodo.vue"
+import FilterTodos from "@/components/FilterTodos.vue"
 
 export default {
   name: "Home",
   components: {
     todoList,
-    AddTodo
+    AddTodo,
+    FilterTodos
   }
 };
 </script>

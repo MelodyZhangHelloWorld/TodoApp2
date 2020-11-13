@@ -36,7 +36,20 @@ const actions = {
 
         commit('removeTodo', id);
 
-    }
+    },
+
+    async filterTodos({ commit }, e) {  //not really filter, just to eliminate the number of items retrieved from api
+
+      //  const limit = parseInt(e.target.options[e.target.options.selectedIndex].innerText); 
+
+        const limit = parseInt(e.target.value);
+        const res = await axios.get(
+            `https://jsonplaceholder.typicode.com/todos?_limit=${limit}`
+          );
+      
+          commit('setTodos', res.data);
+    }  
+        
 
 };
 

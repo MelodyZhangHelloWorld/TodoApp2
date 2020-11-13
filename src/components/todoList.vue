@@ -9,8 +9,7 @@
 
      <!-- delete todo -->
       <div id="trashcan"> 
-        <!-- icon not working -->
-      <!-- <i @click="deleteTodo2(todo.id)" class="fas fa-trash-alt"> </i>  -->
+   
        <b-button size="sm" @click="deleteTodo(todo.id)">X</b-button> 
 
       </div>      
