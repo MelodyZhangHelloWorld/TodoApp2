@@ -5,7 +5,8 @@
 
      <AddTodo />
      <FilterTodos />
-
+<BackToTop 
+text="Back to Top"/>
     <todoList  />
 
 
@@ -21,13 +22,15 @@
 import todoList from "@/components/todoList.vue";
 import AddTodo from "@/components/AddTodo.vue"
 import FilterTodos from "@/components/FilterTodos.vue"
+import BackToTop from 'vue-backtotop'
 
 export default {
   name: "Home",
   components: {
     todoList,
     AddTodo,
-    FilterTodos
+    FilterTodos,
+    BackToTop
   }
 };
 </script>
